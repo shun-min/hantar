@@ -1,0 +1,19 @@
+[build-system]
+requires = [
+    "setuptools>=65",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flock"
+dynamic = ["version"]
+description = "File server with sync service between devices"
+requires-python = "==3.11.6"
+dependencies = [
+    "PyYaml",
+    "fastapi",
+    "python-multipart",
+    "uvicorn",
+    "sqlalchemy",
+]
